@@ -11,6 +11,10 @@ void rev(int arr[],int n){
         h--;
        
     }
+
+   for(int i=0;i<n;i++)
+   cout<<arr[i]<<" ";
+   
 }
 
 int main()
@@ -25,8 +29,6 @@ int main()
    
    rev(arr,n);
    
-   for(int i=0;i<n;i++)
-   cout<<arr[i]<<" ";
    
 
     return 0;
