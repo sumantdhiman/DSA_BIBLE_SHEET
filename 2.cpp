@@ -1,20 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void rev(int arr[],int n){
-    int mx=;
-    int mn=n-1;
-   
-    while(l<h){
-        swap(arr[l],arr[h]);
-        l++;
-        h--;
-       
-    }
+void fun(int arr[],int n){
+    int mx=INT_MIN;
+    int mn=INT_MAX;
 
-   for(int i=0;i<n;i++)
-   cout<<arr[i]<<" ";
-   
+   for(int i=0;i<n;i++){
+
+       if(arr[i]<mn)
+       mn=arr[i];
+
+       if(arr[i]>mx)
+       mx=arr[i];
+   }
+   cout<<"MAX "<<mx<<endl;
+   cout<<"MIN "<<mn<<endl;
 }
 
 int main()
@@ -27,7 +27,7 @@ int main()
    for(int i=0;i<n;i++)
    cin>>arr[i];
    
-   rev(arr,n);
+   fun(arr,n);
    
    
 
