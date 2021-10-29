@@ -16,7 +16,7 @@ int main(){
     cin>>brr[i];
     
      
-    map<int,int>my_map;
+    unordered_map<int,int>my_map;
     
     for(int i=0;i<n;i++)
     { my_map[arr[i]]++;
