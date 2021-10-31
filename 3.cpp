@@ -8,6 +8,17 @@ using namespace std;
 
 int kmaxelement(int arr[],int n,int k){
     
+    
+    priority_queue<int>q;
+    
+    for(int i=0;i<n;i++){
+    q.push(arr[i]);
+    if(q.size()>k)
+    q.pop();
+    }
+    
+    return q.top();
+    /*brute force
     int m,temp=INT_MAX;
     
     while(k--){
@@ -20,7 +31,7 @@ int kmaxelement(int arr[],int n,int k){
      
     }
     
-    return m;
+    return m;*/
 }
 
 
